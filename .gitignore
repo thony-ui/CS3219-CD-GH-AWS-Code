@@ -8,3 +8,5 @@ node_modules/
 /data/
 /address-book-app.zip
 /.env
+
+/deployment.yaml

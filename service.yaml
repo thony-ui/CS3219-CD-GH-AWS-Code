@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: test
+  namespace: test-web-app
+  labels:
+    app: test
+spec:
+  type: LoadBalancer
+  selector:
+    app: test
+  ports:
+    - name: http
+      port: 80 # Public port (user connects here)
+      targetPort: 8080 # Internal port your container listens on
